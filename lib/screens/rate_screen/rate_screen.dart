@@ -27,6 +27,15 @@ class _RateScreenState extends State<RateScreen> {
     4,5,3,3,8,10,30
   ];
 
+
+  List<Map> rateList = [
+    {"subCategory": "Paper", "rate": 3},
+    {"subCategory": "Iron ", "rate": 6},
+    {"subCategory": "Aluminium ", "rate": 10},
+    {"subCategory": "Aluminium ", "rate": 10},
+  ];
+
+
   @override
   Widget build(BuildContext context) {
     print(subCategoryPaper.length);
@@ -55,21 +64,21 @@ class _RateScreenState extends State<RateScreen> {
               ),
 
               RateListCategory(
-                mainCategory: 'Paper',
-                subCategory: subCategoryPaper,
-                subCategoryRate: subCategoryRatePaper,
+                mainCategory: 'Paper', rateList: rateList,
+                // subCategory: subCategoryPaper,
+                // subCategoryRate: subCategoryRatePaper,
               ),
 
-              RateListCategory(
-                mainCategory: 'Plastic',
-                subCategory: plastic,
-                subCategoryRate: ratePlastic,
-              ),
-              RateListCategory(
-                mainCategory: 'Plastic',
-                subCategory: plastic,
-                subCategoryRate: ratePlastic,
-              ),
+              // RateListCategory(
+              //   mainCategory: 'Plastic',
+              //   subCategory: plastic,
+              //   subCategoryRate: ratePlastic,
+              // ),
+              // RateListCategory(
+              //   mainCategory: 'Plastic',
+              //   subCategory: plastic,
+              //   subCategoryRate: ratePlastic,
+              // ),
             ],
           ),
         ),

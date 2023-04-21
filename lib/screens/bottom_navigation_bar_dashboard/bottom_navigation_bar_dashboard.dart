@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../../controllers/bottom_navigation_bar_dashboard_controller.dart';
 import '../profile_screen/profile_screen.dart';
 import '../home_screen/home_screen.dart';

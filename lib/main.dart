@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:scrap_wala/screens/auth/verify_otp_screen.dart';
 import 'package:scrap_wala/screens/bottom_navigation_bar_dashboard/bottom_navigation_bar_dashboard.dart';
+import 'package:scrap_wala/tast/tast_screen.dart';
 import 'package:scrap_wala/theme/theme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -38,13 +39,13 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       translations: Languages(),
-      locale: Locale('hi', 'IN'),
+      locale: Locale('en', 'US'),
       theme: MyTheme.lightTheme,
       darkTheme: MyTheme.darkTheme,
       themeMode: ThemeMode.dark,
-      //home: MobileNumberScreen(),
-     // home: VerifyOtpScreen(),
-      home: BottomNavigationBarDashboard(),
+      home: MobileNumberScreen(),
+      //home: TastScreen(),
+      //home: BottomNavigationBarDashboard(),
     );
   }
 }

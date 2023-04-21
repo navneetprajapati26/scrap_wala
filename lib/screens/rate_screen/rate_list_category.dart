@@ -6,16 +6,12 @@ import '../../util/styles.dart';
 
 class RateListCategory extends StatelessWidget {
   String mainCategory;
-  List<String> subCategory;
-  List<double> subCategoryRate;
 
-  // Map<String,String> subCategoryRate;
+  List<Map> rateList;
 
   RateListCategory(
-      {Key? key,
-      required this.mainCategory,
-      required this.subCategory,
-      required this.subCategoryRate})
+      {Key? key, required this.mainCategory, required this.rateList
+      })
       : super(key: key);
 
   @override
@@ -34,10 +30,8 @@ class RateListCategory extends StatelessWidget {
           Container(
             height: 100,
             child: ListView.builder(
-              //shrinkWrap: true,
               scrollDirection: Axis.horizontal,
-              //physics: const NeverScrollableScrollPhysics(),
-              itemCount: subCategory.length,
+              itemCount: rateList.length,
               itemBuilder: (context, index) {
                 return Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -50,12 +44,12 @@ class RateListCategory extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20)),
                       child: Column(
                         children: [
-                          Text(subCategory[index],
+                          Text(rateList[index].values.elementAt(0).toString(),
                               style: promptBold.copyWith(
                                   fontSize: Dimensions.fontSizeDefault)),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('${subCategoryRate[index]} ₹/kg',style: promptBold.copyWith(
+                            child: Text('${rateList[index].values.elementAt(1).toString()} ₹/kg',style: promptBold.copyWith(
                                 fontSize: Dimensions.fontSizeExtraLarge)),
                           )
                         ],
