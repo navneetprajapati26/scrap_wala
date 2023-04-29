@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:scrap_wala/screens/rate_screen/rate_list_category.dart';
 import 'package:scrap_wala/util/dimensions.dart';
 
+import '../../controllers/favourite_controller.dart';
 import '../../util/styles.dart';
 
 class RateScreen extends StatefulWidget {
@@ -35,6 +36,7 @@ class _RateScreenState extends State<RateScreen> {
     {"subCategory": "Aluminium ", "rate": 10},
   ];
 
+  final controller = Get.put(FavouriteController());
 
   @override
   Widget build(BuildContext context) {
@@ -64,7 +66,17 @@ class _RateScreenState extends State<RateScreen> {
               ),
 
               RateListCategory(
-                mainCategory: 'Paper', rateList: rateList,
+                mainCategory: 'Paper', rateList: controller.subCategoryList,
+                // subCategory: subCategoryPaper,
+                // subCategoryRate: subCategoryRatePaper,
+              ),
+              RateListCategory(
+                mainCategory: 'Plastic', rateList: controller.subCategoryListPlastic,
+                // subCategory: subCategoryPaper,
+                // subCategoryRate: subCategoryRatePaper,
+              ),
+              RateListCategory(
+                mainCategory: 'Metals', rateList: controller.subCategoryListMetals,
                 // subCategory: subCategoryPaper,
                 // subCategoryRate: subCategoryRatePaper,
               ),

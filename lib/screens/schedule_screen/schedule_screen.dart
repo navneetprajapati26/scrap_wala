@@ -33,11 +33,10 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
 
   List<Map> categories = [
     {"name": "Paper", "isChecked": false},
-    {"name": "Iron ", "isChecked": false},
-    {"name": "Aluminium ", "isChecked": false},
+    {"name": "Plastic  ", "isChecked": false},
+    {"name": "Metals ", "isChecked": false},
   ];
-  String img =
-      "https://w7.pngwing.com/pngs/800/156/png-transparent-recycling-symbol-recycle-green-icon-label-text-recycling-thumbnail.png";
+  String img = "https://w7.pngwing.com/pngs/800/156/png-transparent-recycling-symbol-recycle-green-icon-label-text-recycling-thumbnail.png";
 
 
   final controller = Get.put(FavouriteController());
@@ -166,7 +165,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
               children: [
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 25),
-                  child: Text("Iron",
+                  child: Text("Plastic",
                       style: promptBold.copyWith(
                           fontSize: Dimensions.fontSizeOverLarge)),
                 ),
@@ -174,7 +173,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                   height: 134,
                   // color: Colors.redAccent,
                   child: ListView.builder(
-                      itemCount: controller.subCategoryList.length,
+                      itemCount: controller.subCategoryListPlastic.length,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Padding(
@@ -202,21 +201,21 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                                       child: Image.network(img)),
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
-                                    child: Text(controller.subCategoryList[index]["subCategory"] ,style: promptBold,),
+                                    child: Text(controller.subCategoryListPlastic[index]["subCategory"] ,style: promptBold,),
                                   ),
-                                  Text(controller.subCategoryList[index]["rate"].toString() + " ₹/kg")
+                                  Text(controller.subCategoryListPlastic[index]["rate"].toString() + " ₹/kg")
                                 ],
                               ),
                             ),
                             onTap: () {
                               setState(() {
                                 if (controller.salected_scrap
-                                    .contains(controller.subCategoryList[index])) {
+                                    .contains(controller.subCategoryListPlastic[index])) {
                                   controller.removeFromFavourite(
-                                      controller.subCategoryList[index]);
+                                      controller.subCategoryListPlastic[index]);
                                 } else {
                                   controller.addToFavourite(
-                                      controller.subCategoryList[index]);
+                                      controller.subCategoryListPlastic[index]);
                                 }
                                 //color: controller.fruit.contains(controller.fruitList[index]) ?   Colors.red : Colors.white)
                                 //s = controller.fruit.contains(controller.fruitList[index])? 100 :80;
@@ -236,7 +235,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
               children: [
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 25),
-                  child: Text("Aluminium",
+                  child: Text("Metals",
                       style: promptBold.copyWith(
                           fontSize: Dimensions.fontSizeOverLarge)),
                 ),
@@ -244,7 +243,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                   height: 134,
                   // color: Colors.redAccent,
                   child: ListView.builder(
-                      itemCount: controller.subCategoryList.length,
+                      itemCount: controller.subCategoryListMetals.length,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Padding(
@@ -259,7 +258,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                               decoration: BoxDecoration(
                                 //color: context.theme.highlightColor,
                                   color: controller.salected_scrap.contains(
-                                      controller.subCategoryList[index])
+                                      controller.subCategoryListMetals[index])
                                       ? context.theme.primaryColor
                                       : context.theme.highlightColor,
                                   borderRadius: BorderRadius.circular(20)),
@@ -272,21 +271,21 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                                       child: Image.network(img)),
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
-                                    child: Text(controller.subCategoryList[index]["subCategory"] ,style: promptBold,),
+                                    child: Text(controller.subCategoryListMetals[index]["subCategory"] ,style: promptBold,),
                                   ),
-                                  Text(controller.subCategoryList[index]["rate"].toString() + " ₹/kg")
+                                  Text(controller.subCategoryListMetals[index]["rate"].toString() + " ₹/kg")
                                 ],
                               ),
                             ),
                             onTap: () {
                               setState(() {
                                 if (controller.salected_scrap
-                                    .contains(controller.subCategoryList[index])) {
+                                    .contains(controller.subCategoryListMetals[index])) {
                                   controller.removeFromFavourite(
-                                      controller.subCategoryList[index]);
+                                      controller.subCategoryListMetals[index]);
                                 } else {
                                   controller.addToFavourite(
-                                      controller.subCategoryList[index]);
+                                      controller.subCategoryListMetals[index]);
                                 }
                                 //color: controller.fruit.contains(controller.fruitList[index]) ?   Colors.red : Colors.white)
                                 //s = controller.fruit.contains(controller.fruitList[index])? 100 :80;

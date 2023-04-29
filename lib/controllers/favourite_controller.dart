@@ -9,11 +9,24 @@ class FavouriteController extends GetxController{
   //RxList<String> fruitList = ['Apple' , 'Orange' , 'Grapes' , 'Mango'].obs ;
 
   RxList<Map> subCategoryList = [
-    {"subCategory": "Newspaper ", "rate": 3, "isChecked": false},
-    {"subCategory": "Cartoon ", "rate": 6, "isChecked": false},
-    {"subCategory": "File paper ", "rate": 10, "isChecked": false},
-    {"subCategory": "File paper ", "rate": 10, "isChecked": false},
-    {"subCategory": "File paper ", "rate": 10, "isChecked": false},
+    {"subCategory": "Newspaper ", "rate": 14, "isChecked": false},
+    {"subCategory": "Books ", "rate": 12, "isChecked": false},
+    {"subCategory": "Carton ", "rate": 9, "isChecked": false},
+    {"subCategory": "Magazines ", "rate": 7, "isChecked": false},
+    {"subCategory": "Grey Board ", "rate": 2, "isChecked": false},
+  ].obs;
+
+  RxList<Map> subCategoryListPlastic = [
+    {"subCategory": "soft plastic ", "rate": 7, "isChecked": false},
+    {"subCategory": "mix plastic ", "rate": 4, "isChecked": false},
+    {"subCategory": "hard plastic ", "rate": 10, "isChecked": false},
+    {"subCategory": "Bumper ", "rate": 20, "isChecked": false},
+  ].obs;
+
+  RxList<Map> subCategoryListMetals = [
+    {"subCategory": "copper ", "rate": 300, "isChecked": false},
+    {"subCategory": "Aluminium ", "rate": 75, "isChecked": false},
+    {"subCategory": "brass ", "rate": 200, "isChecked": false},
   ].obs;
 
   //RxInt totel = 0.obs;
