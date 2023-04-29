@@ -1,70 +1,33 @@
 {
   "project_info": {
-    "project_number": "577129422174",
-    "project_id": "scrap-wala-a709b",
-    "storage_bucket": "scrap-wala-a709b.appspot.com"
+    "project_number": "758292373376",
+    "project_id": "scrapwala-a04bb",
+    "storage_bucket": "scrapwala-a04bb.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:577129422174:android:555593d9d2da2b8f1ec3cf",
-        "android_client_info": {
-          "package_name": "com.example.scrap_wala"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "577129422174-scqu3ubcv5cp4l8skj20fejg8b7i7sl0.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.scrap_wala",
-            "certificate_hash": "724651ec314b82af954e48dc8d963a613426c640"
-          }
-        },
-        {
-          "client_id": "577129422174-f1h64fp46jhpmckqd06fego8uq5dg2bs.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBJyyJbDgxe60R98Sp6wupT69F7AhE7VWY"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "577129422174-f1h64fp46jhpmckqd06fego8uq5dg2bs.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:577129422174:android:988ebe016eb40ce71ec3cf",
+        "mobilesdk_app_id": "1:758292373376:android:5e5cb213f90622609eeb65",
         "android_client_info": {
           "package_name": "com.scrapwala.admin.scrap_wala"
         }
       },
       "oauth_client": [
         {
-          "client_id": "577129422174-f1h64fp46jhpmckqd06fego8uq5dg2bs.apps.googleusercontent.com",
+          "client_id": "758292373376-37a21u664n8fl2sba6lipbh0ka6gbo80.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBJyyJbDgxe60R98Sp6wupT69F7AhE7VWY"
+          "current_key": "AIzaSyCIb_nZmbrA_xpW6tEKIR1LnE9a-_Xbz3E"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "577129422174-f1h64fp46jhpmckqd06fego8uq5dg2bs.apps.googleusercontent.com",
+              "client_id": "758292373376-37a21u664n8fl2sba6lipbh0ka6gbo80.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>758292373376-c24pcqpr3nhgdr6b8r0at91pt5434vu7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.758292373376-c24pcqpr3nhgdr6b8r0at91pt5434vu7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB2_OLje7Jce7G20aa2xdal6jLqGxQPPWA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>758292373376</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.scrapwala.admin.scrapWala</string>
+	<key>PROJECT_ID</key>
+	<string>scrapwala-a04bb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>scrapwala-a04bb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:758292373376:ios:5cd41d340adb223b9eeb65</string>
+</dict>
+</plist>

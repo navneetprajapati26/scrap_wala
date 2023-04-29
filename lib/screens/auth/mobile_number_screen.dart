@@ -60,6 +60,7 @@ class _MobileNumberScreenState extends State<MobileNumberScreen> {
               CupertinoButton(
                 onPressed: () {
                   //todo: Login btn
+                  _authController.sendOtp(phoneNumber, context);
                   Get.to(() => const VerifyOtpScreen());
                   print(phoneNumber);
                 },

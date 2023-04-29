@@ -110,6 +110,7 @@ class _VerifyOtpScreenState extends State<VerifyOtpScreen> {
                   /// otpCode : is otp
                   print(otpCode);
                   //todo: Verify OTP
+                  _authController.verifyOtp(otpCode!, context);
                   Get.to(() =>BottomNavigationBarDashboard());
                 },
                 padding: EdgeInsets.zero,

@@ -17,19 +17,13 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -52,11 +46,30 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyDUTxymEsaKcl0J3uiGGYBXWqtbwkdVkUc',
+    appId: '1:758292373376:web:0a948db0e79d82559eeb65',
+    messagingSenderId: '758292373376',
+    projectId: 'scrapwala-a04bb',
+    authDomain: 'scrapwala-a04bb.firebaseapp.com',
+    storageBucket: 'scrapwala-a04bb.appspot.com',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBJyyJbDgxe60R98Sp6wupT69F7AhE7VWY',
-    appId: '1:577129422174:android:988ebe016eb40ce71ec3cf',
-    messagingSenderId: '577129422174',
-    projectId: 'scrap-wala-a709b',
-    storageBucket: 'scrap-wala-a709b.appspot.com',
+    apiKey: 'AIzaSyCIb_nZmbrA_xpW6tEKIR1LnE9a-_Xbz3E',
+    appId: '1:758292373376:android:5e5cb213f90622609eeb65',
+    messagingSenderId: '758292373376',
+    projectId: 'scrapwala-a04bb',
+    storageBucket: 'scrapwala-a04bb.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyB2_OLje7Jce7G20aa2xdal6jLqGxQPPWA',
+    appId: '1:758292373376:ios:5cd41d340adb223b9eeb65',
+    messagingSenderId: '758292373376',
+    projectId: 'scrapwala-a04bb',
+    storageBucket: 'scrapwala-a04bb.appspot.com',
+    iosClientId: '758292373376-c24pcqpr3nhgdr6b8r0at91pt5434vu7.apps.googleusercontent.com',
+    iosBundleId: 'com.scrapwala.admin.scrapWala',
   );
 }
