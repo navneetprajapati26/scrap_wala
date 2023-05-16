@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:scrap_wala/screens/auth/verify_otp_screen.dart';
+import 'package:scrap_wala/screens/auth/login_user_screen/auth_controller.dart';
+import 'package:scrap_wala/screens/auth/login_user_screen/verify_otp_screen.dart';
 import 'package:scrap_wala/screens/bottom_navigation_bar_dashboard/bottom_navigation_bar_dashboard.dart';
+import 'package:scrap_wala/screens/splash_screen/splash_screen.dart';
 import 'package:scrap_wala/tast/tast_screen.dart';
 import 'package:scrap_wala/theme/theme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-import 'controllers/auth_controllers.dart';
 import 'controllers/language_controller.dart';
 import 'firebase_options.dart';
-import 'screens/auth/mobile_number_screen.dart';
+import 'screens/auth/login_user_screen/mobile_number_screen.dart';
 
 void main() async {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -25,7 +25,7 @@ void main() async {
 
   SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
   Get.put(sharedPreferences);
-  Get.put(AuthController());
+ // Get.put(AuthController());
   runApp(const MyApp());
 }
 
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.dark,
       home: MobileNumberScreen(),
       //home: TastScreen(),
-      //home: BottomNavigationBarDashboard(),
+      //home: SplashScreen(),
     );
   }
 }

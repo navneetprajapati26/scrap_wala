@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
 class MyTheme {
-  static Color color = const Color(0xFFffcc00);
+  static Color color = const Color(0xff4CAF50);
   static ThemeData lightTheme = ThemeData(
     //fontFamily: 'Roboto',
     primaryColor: color,
     secondaryHeaderColor: Color(0xffe0b400),
     highlightColor:  Color(0xFFD9D8D8),
     disabledColor: Color(0xFFBABFC4),
+    shadowColor: Color(0x4043ff00),
     brightness: Brightness.light,
     hintColor: Color(0xFF9F9F9F),
     cardColor: Colors.white,
@@ -23,6 +24,7 @@ class MyTheme {
     secondaryHeaderColor: Color(0xffe0b400),
     highlightColor:  Color(0xff363333),
     disabledColor: Color(0xffa2a7ad),
+    shadowColor: Color(0x4043ff00),
     brightness: Brightness.dark,
     hintColor: Color(0xFFbebebe),
     cardColor: Colors.black,

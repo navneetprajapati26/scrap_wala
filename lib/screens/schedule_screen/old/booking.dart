@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../controllers/favourite_controller.dart';
+import '../../../controllers/favourite_controller.dart';
 class Booking extends StatefulWidget {
   const Booking({Key? key}) : super(key: key);
 

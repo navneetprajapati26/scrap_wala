@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:scrap_wala/screens/schedule_screen/booking.dart';
+import 'package:scrap_wala/screens/schedule_screen/old/booking.dart';
 
-import '../../controllers/favourite_controller.dart';
-import '../../util/dimensions.dart';
-import '../../util/styles.dart';
-import '../rate_screen/rate_list_category.dart';
+import '../../../controllers/favourite_controller.dart';
+import '../../../util/dimensions.dart';
+import '../../../util/styles.dart';
+import '../../rate_screen/util/rate_list_category.dart';
 
 class ScheduleScreen extends StatefulWidget {
   const ScheduleScreen({Key? key}) : super(key: key);
